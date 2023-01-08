@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sistem
-Sun Jan 08 21:06:53 2023
+Sun Jan 08 21:20:05 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 08 21:06:53 2023                     ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 08 21:20:05 2023                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; sistem                                                    ;
 ; Top-level Entity Name              ; sistem                                                    ;
@@ -176,44 +176,44 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                   ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                         ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------+
-; procpak.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/procpak.vhd                                                        ;             ;
-; proc.vhd                                                           ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/proc.vhd                                                           ;             ;
-; cpu.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/cpu.vhd                                                            ;             ;
-; sistem.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd                                                         ;             ;
-; grafika.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd                                                        ;             ;
-; io.vhd                                                             ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/io.vhd                                                             ;             ;
-; VGAvmesnik.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/VGAvmesnik.vhd                                                     ;             ;
-; program.vhd                                                        ; yes             ; User Wizard-Generated File                   ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd                                                        ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                         ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                   ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                 ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                    ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                    ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                  ;             ;
-; db/altsyncram_jpu3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf                                             ;             ;
-; db/altsyncram_v5s2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_v5s2.tdf                                             ;             ;
-; ../koda.mif                                                        ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/titit/Desktop/Projekt/koda.mif                                                                              ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                           ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                 ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                             ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                   ; altera_sld  ;
-; db/ip/sld6c6326ae/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                              ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------+-------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                      ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------+
+; procpak.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd                                                        ;             ;
+; proc.vhd                                                           ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd                                                           ;             ;
+; cpu.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd                                                            ;             ;
+; sistem.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd                                                         ;             ;
+; grafika.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd                                                        ;             ;
+; io.vhd                                                             ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd                                                             ;             ;
+; VGAvmesnik.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd                                                     ;             ;
+; program.vhd                                                        ; yes             ; User Wizard-Generated File                   ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd                                                        ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                             ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                      ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                             ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                             ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                              ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                 ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                 ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                               ;             ;
+; db/altsyncram_jpu3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf                                             ;             ;
+; db/altsyncram_v5s2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_v5s2.tdf                                             ;             ;
+; ../koda.mif                                                        ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/koda.mif                                                                              ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                        ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                              ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                          ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                             ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                ; altera_sld  ;
+; db/ip/sld6c6326ae/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                           ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +---------------------------------------------------------+
@@ -4925,7 +4925,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:19     ;
+; Top            ; 00:01:18     ;
 +----------------+--------------+
 
 
@@ -4935,40 +4935,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Jan 08 21:05:06 2023
+    Info: Processing started: Sun Jan 08 21:18:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sistem -c sistem
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 1 design units, including 0 entities, in source file procpak.vhd
-    Info (12022): Found design unit 1: procpak File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/procpak.vhd Line: 5
+    Info (12022): Found design unit 1: procpak File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file proc.vhd
-    Info (12022): Found design unit 1: proc-Opis File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/proc.vhd Line: 15
-    Info (12023): Found entity 1: proc File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/proc.vhd Line: 5
+    Info (12022): Found design unit 1: proc-Opis File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd Line: 15
+    Info (12023): Found entity 1: proc File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-opis File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/cpu.vhd Line: 18
-    Info (12023): Found entity 1: CPU File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/cpu.vhd Line: 6
+    Info (12022): Found design unit 1: CPU-opis File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd Line: 18
+    Info (12023): Found entity 1: CPU File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file sistem.vhd
-    Info (12022): Found design unit 1: sistem-opis File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 25
-    Info (12023): Found entity 1: sistem File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 15
+    Info (12022): Found design unit 1: sistem-opis File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 25
+    Info (12023): Found entity 1: sistem File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 15
 Info (12021): Found 2 design units, including 1 entities, in source file grafika.vhd
-    Info (12022): Found design unit 1: grafika-RTL File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 23
-    Info (12023): Found entity 1: grafika File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 7
+    Info (12022): Found design unit 1: grafika-RTL File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 23
+    Info (12023): Found entity 1: grafika File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file io.vhd
-    Info (12022): Found design unit 1: io-RTL File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/io.vhd Line: 27
-    Info (12023): Found entity 1: io File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/io.vhd Line: 5
+    Info (12022): Found design unit 1: io-RTL File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd Line: 27
+    Info (12023): Found entity 1: io File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file vgavmesnik.vhd
-    Info (12022): Found design unit 1: VGAvmesnik-Opis File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/VGAvmesnik.vhd Line: 19
-    Info (12023): Found entity 1: VGAvmesnik File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/VGAvmesnik.vhd Line: 6
+    Info (12022): Found design unit 1: VGAvmesnik-Opis File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd Line: 19
+    Info (12023): Found entity 1: VGAvmesnik File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file program.vhd
-    Info (12022): Found design unit 1: program-SYN File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd Line: 56
-    Info (12023): Found entity 1: program File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd Line: 43
+    Info (12022): Found design unit 1: program-SYN File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd Line: 56
+    Info (12023): Found entity 1: program File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd Line: 43
 Info (12127): Elaborating entity "sistem" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "led[7..1]" at sistem.vhd(21) File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-Info (12128): Elaborating entity "VGAvmesnik" for hierarchy "VGAvmesnik:U1" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 55
-Info (12128): Elaborating entity "proc" for hierarchy "proc:U2" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 83
-Info (12128): Elaborating entity "program" for hierarchy "proc:U2|program:v0" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/proc.vhd Line: 28
-Info (12128): Elaborating entity "altsyncram" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "proc:U2|program:v0|altsyncram:altsyncram_component" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd Line: 63
-Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/program.vhd Line: 63
+Warning (10873): Using initial value X (don't care) for net "led[7..1]" at sistem.vhd(21) File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+Info (12128): Elaborating entity "VGAvmesnik" for hierarchy "VGAvmesnik:U1" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 55
+Info (12128): Elaborating entity "proc" for hierarchy "proc:U2" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 83
+Info (12128): Elaborating entity "program" for hierarchy "proc:U2|program:v0" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd Line: 28
+Info (12128): Elaborating entity "altsyncram" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "proc:U2|program:v0|altsyncram:altsyncram_component" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd Line: 63
+Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd Line: 63
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -5020,16 +5020,16 @@ Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncra
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=NONE"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jpu3.tdf
-    Info (12023): Found entity 1: altsyncram_jpu3 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_jpu3 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_jpu3" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_v5s2.tdf
-    Info (12023): Found entity 1: altsyncram_v5s2 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_v5s2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_v5s2" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|altsyncram_v5s2:altsyncram1" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 38
-Warning (113028): 203 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/titit/Desktop/Projekt/koda.mif Line: 1
-    Warning (113027): Addresses ranging from 53 to 255 are not initialized File: C:/Users/titit/Desktop/Projekt/koda.mif Line: 1
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
-Info (12130): Elaborated megafunction instantiation "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
-Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
+    Info (12023): Found entity 1: altsyncram_v5s2 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_v5s2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_v5s2" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|altsyncram_v5s2:altsyncram1" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 38
+Warning (113028): 203 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/koda.mif Line: 1
+    Warning (113027): Addresses ranging from 53 to 255 are not initialized File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/koda.mif Line: 1
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
+Info (12130): Elaborated megafunction instantiation "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
+Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/altsyncram_jpu3.tdf Line: 39
     Info (12134): Parameter "CVALUE" = "000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -5041,19 +5041,19 @@ Info (12133): Instantiated megafunction "proc:U2|program:v0|altsyncram:altsyncra
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "proc:U2|program:v0|altsyncram:altsyncram_component|altsyncram_jpu3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 799
-Info (12128): Elaborating entity "CPU" for hierarchy "proc:U2|CPU:v1" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/proc.vhd Line: 36
-Info (12128): Elaborating entity "grafika" for hierarchy "grafika:U3" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 95
-Warning (10541): VHDL Signal Declaration warning at grafika.vhd(19): used implicit default value for signal "debug" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 19
-Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(659): object "D4_x_maze" assigned a value but never read File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 659
-Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(659): object "D4_y_maze" assigned a value but never read File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 659
-Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(663): object "D4_x_cnt" assigned a value but never read File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 663
-Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(663): object "D4_y_cnt" assigned a value but never read File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 663
-Warning (10631): VHDL Process Statement warning at grafika.vhd(799): inferring latch(es) for signal or variable "data", which holds its previous value in one or more paths through the process File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 799
-Info (10041): Inferred latch for "data" at grafika.vhd(799) File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 799
+Info (12128): Elaborating entity "CPU" for hierarchy "proc:U2|CPU:v1" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd Line: 36
+Info (12128): Elaborating entity "grafika" for hierarchy "grafika:U3" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 95
+Warning (10541): VHDL Signal Declaration warning at grafika.vhd(19): used implicit default value for signal "debug" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 19
+Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(659): object "D4_x_maze" assigned a value but never read File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 659
+Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(659): object "D4_y_maze" assigned a value but never read File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 659
+Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(663): object "D4_x_cnt" assigned a value but never read File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 663
+Warning (10036): Verilog HDL or VHDL warning at grafika.vhd(663): object "D4_y_cnt" assigned a value but never read File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 663
+Warning (10631): VHDL Process Statement warning at grafika.vhd(799): inferring latch(es) for signal or variable "data", which holds its previous value in one or more paths through the process File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 799
+Info (10041): Inferred latch for "data" at grafika.vhd(799) File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 799
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "Osnova" into its bus
-Info (12128): Elaborating entity "io" for hierarchy "io:U4" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 110
+Info (12128): Elaborating entity "io" for hierarchy "io:U4" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 110
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.01.08.21:05:22 Progress: Loading sld6c6326ae/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.01.08.21:18:36 Progress: Loading sld6c6326ae/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -5064,34 +5064,34 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld6c6326ae/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (14026): LATCH primitive "grafika:U3|data" is permanently enabled File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/grafika.vhd Line: 611
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/db/ip/sld6c6326ae/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (14026): LATCH primitive "grafika:U3|data" is permanently enabled File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd Line: 611
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "led[0]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[1]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[2]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[3]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[4]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[5]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[6]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
-    Warning (13410): Pin "led[7]" is stuck at GND File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[0]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[1]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[2]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[3]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[4]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[5]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[6]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
+    Warning (13410): Pin "led[7]" is stuck at GND File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 21
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "key[1]" File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 17
+    Warning (15610): No output dependent on input pin "key[1]" File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 17
 Info (21057): Implemented 13085 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 12 output pins
@@ -5099,9 +5099,9 @@ Info (21057): Implemented 13085 device resources after synthesis - the final res
     Info (21061): Implemented 13046 logic cells
     Info (21064): Implemented 12 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4932 megabytes
-    Info: Processing ended: Sun Jan 08 21:06:53 2023
-    Info: Elapsed time: 00:01:47
-    Info: Total CPU time (on all processors): 00:02:07
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Sun Jan 08 21:20:05 2023
+    Info: Elapsed time: 00:01:44
+    Info: Total CPU time (on all processors): 00:02:03
 
 

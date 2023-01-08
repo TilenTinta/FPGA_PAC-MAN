@@ -1,5 +1,5 @@
 Fitter report for sistem
-Sun Jan 08 21:07:33 2023
+Sun Jan 08 21:20:46 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jan 08 21:07:33 2023                     ;
+; Fitter Status                      ; Successful - Sun Jan 08 21:20:46 2023                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; sistem                                                    ;
 ; Top-level Entity Name              ; sistem                                                    ;
@@ -163,7 +163,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.5%      ;
+;     Processor 2            ;   5.7%      ;
 +----------------------------+-------------+
 
 
@@ -231,7 +231,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.pin.
+The pin-out file can be found in C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -1353,10 +1353,10 @@ Info (332111): Found 2 clocks
     Info (332111): ======== ============
     Info (332111):  100.000 altera_reserved_tck
     Info (332111):   20.000          clk
-Info (176353): Automatically promoted node clk~input (placed in PIN R8 (CLK15, DIFFCLK_6p)) File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 16
+Info (176353): Automatically promoted node clk~input (placed in PIN R8 (CLK15, DIFFCLK_6p)) File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 16
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node clkout~output File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 18
+        Info (176357): Destination node clkout~output File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 18
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
@@ -1385,36 +1385,36 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
-Info (11888): Total time spent on timing analysis during the Fitter is 3.39 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 3.50 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 11 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin key[1] uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 17
-    Info (169178): Pin data[0] uses I/O standard 3.3-V LVTTL at C16 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[1] uses I/O standard 3.3-V LVTTL at C15 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[2] uses I/O standard 3.3-V LVTTL at D16 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[3] uses I/O standard 3.3-V LVTTL at D15 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[4] uses I/O standard 3.3-V LVTTL at D14 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[5] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[6] uses I/O standard 3.3-V LVTTL at F16 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin data[7] uses I/O standard 3.3-V LVTTL at F14 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 20
-    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at R8 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 16
-    Info (169178): Pin key[0] uses I/O standard 3.3-V LVTTL at J15 File: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.vhd Line: 17
-Info (144001): Generated suppressed messages file C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.fit.smsg
+    Info (169178): Pin key[1] uses I/O standard 3.3-V LVTTL at E1 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 17
+    Info (169178): Pin data[0] uses I/O standard 3.3-V LVTTL at C16 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[1] uses I/O standard 3.3-V LVTTL at C15 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[2] uses I/O standard 3.3-V LVTTL at D16 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[3] uses I/O standard 3.3-V LVTTL at D15 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[4] uses I/O standard 3.3-V LVTTL at D14 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[5] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[6] uses I/O standard 3.3-V LVTTL at F16 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin data[7] uses I/O standard 3.3-V LVTTL at F14 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 20
+    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at R8 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 16
+    Info (169178): Pin key[0] uses I/O standard 3.3-V LVTTL at J15 File: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd Line: 17
+Info (144001): Generated suppressed messages file C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5396 megabytes
-    Info: Processing ended: Sun Jan 08 21:07:34 2023
-    Info: Elapsed time: 00:00:40
-    Info: Total CPU time (on all processors): 00:00:54
+    Info: Peak virtual memory: 5397 megabytes
+    Info: Processing ended: Sun Jan 08 21:20:48 2023
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:55
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.fit.smsg.
+The suppressed messages can be found in C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.fit.smsg.
 
 

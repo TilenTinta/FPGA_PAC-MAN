@@ -1,5 +1,5 @@
 Assembler report for sistem
-Sun Jan 08 21:07:37 2023
+Sun Jan 08 21:20:50 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.sof
+  6. Assembler Device Options: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.sof
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Jan 08 21:07:37 2023 ;
+; Assembler Status      ; Successful - Sun Jan 08 21:20:50 2023 ;
 ; Revision Name         ; sistem                                ;
 ; Top-level Entity Name ; sistem                                ;
 ; Family                ; Cyclone IV E                          ;
@@ -64,23 +64,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+------------------------+--------------+
 
 
-+--------------------------------------------------------------+
-; Assembler Generated Files                                    ;
-+--------------------------------------------------------------+
-; File Name                                                    ;
-+--------------------------------------------------------------+
-; C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.sof ;
-+--------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Assembler Generated Files                                                 ;
++---------------------------------------------------------------------------+
+; File Name                                                                 ;
++---------------------------------------------------------------------------+
+; C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.sof ;
++---------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/titit/Desktop/Projekt/B21sistem_restored/sistem.sof ;
-+----------------+-----------------------------------------------------------------------+
-; Option         ; Setting                                                               ;
-+----------------+-----------------------------------------------------------------------+
-; JTAG usercode  ; 0x00936F6C                                                            ;
-; Checksum       ; 0x00936F6C                                                            ;
-+----------------+-----------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.sof ;
++----------------+------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                            ;
++----------------+------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00936F6C                                                                         ;
+; Checksum       ; 0x00936F6C                                                                         ;
++----------------+------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -89,13 +89,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Jan 08 21:07:35 2023
+    Info: Processing started: Sun Jan 08 21:20:49 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off sistem -c sistem
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Sun Jan 08 21:07:37 2023
+    Info: Peak virtual memory: 4710 megabytes
+    Info: Processing ended: Sun Jan 08 21:20:51 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -1,6 +1,6 @@
 Restore Archived Project report for sistem
-Wed Dec 14 20:47:20 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sun Jan 08 21:17:33 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Dec 14 20:47:20 2022 ;
+; Restore Archived Project Status ; Successful - Sun Jan 08 21:17:33 2023 ;
 ; Revision Name                   ; sistem                                ;
 ; Top-level Entity Name           ; sistem                                ;
 ; Family                          ; Cyclone IV E                          ;
@@ -47,13 +47,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/titit/Desktop/Projekt/B21sistem.qar' into the 'C:/Users/titit/Desktop/Projekt/B21sistem_restored/' directory
+Info: Successfully restored 'C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem.qar' into the 'C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/' directory
 Info: Generated report 'sistem.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Wed Dec 14 20:47:20 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Sun Jan 08 21:17:33 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
