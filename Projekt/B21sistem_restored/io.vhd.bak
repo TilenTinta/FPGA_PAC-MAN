@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity io is
+ port (
+   clk : in std_logic;
+   rw : in unsigned(1 downto 0);
+   adr : in unsigned(7 downto 0);
+   datin : in unsigned(11 downto 0);
+	tipke : in unsigned(3 downto 0);
+	datout : out unsigned(11 downto 0);
+   x1,y1 : out unsigned(11 downto 0)
+    );
+end io;
+
+architecture RTL of io is
+
+begin
+  x1 <= x"010";
+  y1 <= x"020";
+
+end RTL;
+
+

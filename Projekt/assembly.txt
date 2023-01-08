@@ -1,0 +1,65 @@
+	lda 4000
+	outp  do0
+start:	lda 380
+	sta x
+	outp 1
+	lda 440
+	sta y
+	outp 2
+trk:	inp rst
+	jze loop0
+	jmp start
+
+loop0:   inp t0
+	jze loop1
+	inp stopleft
+	jze loop1
+	lda x
+	sbt 1
+	sta x
+	outp 1
+	jmp trk
+
+loop1:  inp t1
+	jze loop2
+	inp stopright
+	jze loop2
+	lda x
+	add 1
+	sta x
+	outp 1
+	jmp trk
+
+loop2:  inp t2
+	jze loop3
+	inp stopup
+	jze loop3
+	lda y
+	sbt 1
+	sta y
+	outp 2
+	jmp trk
+
+loop3:  inp t3
+	jze loop0
+	inp stopdn
+	jze loop0
+	lda y
+	add 1
+	sta y
+	outp 2
+	jmp trk
+
+x db 0
+y db 0
+do0 do 0
+t0 di 0
+t1 di 1
+t2 di 2
+t3 di 3
+rst di 5
+stopup di 6
+stopdn di 7
+stopleft di 8
+stopright di 9
+

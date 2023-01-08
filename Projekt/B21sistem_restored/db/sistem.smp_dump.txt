@@ -1,0 +1,6 @@
+
+State Machine - |sistem|proc:U2|CPU:v1|st
+Name st.izvedi st.zajemi st.reset 
+st.reset 0 0 0 
+st.zajemi 0 1 1 
+st.izvedi 1 0 1 
