@@ -1,5 +1,4 @@
 
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
@@ -23,8 +22,41 @@ end grafika;
 architecture RTL of grafika is
  
 -- /// LABIRINT (Bloki in osnova) ///
-type deklaracija is array (0 to 29, 0 to 39) of integer range 0 to 31; --(y,x)
+type deklaracija is array (0 to 29, 0 to 39) of integer range 0 to 30; --(y,x) 32
 signal Osnova: deklaracija:=(
+(00,00,00,00,00,00,03,01,01,01,01,01,01,01,01,01,01,01,01,21,22,01,01,01,01,01,01,01,01,01,01,01,01,04,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,28,28,28,28,28,28,09,10,28,28,28,28,28,28,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,30,30,30,00,02,28,11,08,08,12,28,11,08,08,08,12,28,09,10,28,11,08,08,08,12,28,11,08,08,12,28,02,00,27,27,27,00,00),
+(00,00,00,00,00,00,02,29,09,00,00,10,28,09,00,00,00,10,28,09,10,28,09,00,00,00,10,28,09,00,00,10,29,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,14,07,07,13,28,14,07,07,07,13,28,14,13,28,14,07,07,07,13,28,14,07,07,13,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,19,01,01,20,28,11,12,28,19,01,01,21,22,01,01,20,28,11,12,28,19,01,01,20,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,09,10,28,28,28,28,09,10,28,28,28,28,09,10,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,05,01,01,01,01,04,28,09,18,08,08,12,00,09,10,00,11,08,08,17,10,28,03,01,01,01,01,06,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,15,07,07,13,00,14,13,00,14,07,07,16,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,10,00,00,00,00,00,00,00,00,00,00,09,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,10,00,03,01,20,00,00,19,01,04,00,09,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,01,01,01,01,01,06,28,14,13,00,02,00,00,00,00,00,00,02,00,14,13,28,05,01,01,01,01,01,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,00,28,00,00,00,02,00,00,00,00,00,00,02,00,00,00,28,00,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,01,01,01,01,01,04,28,11,12,00,02,00,00,00,00,00,00,02,00,11,12,28,03,01,01,01,01,01,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,10,00,05,01,01,01,01,01,01,06,00,09,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,10,00,00,00,00,00,00,00,00,00,00,09,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,00,00,00,00,00,02,28,09,10,00,11,08,08,08,08,08,08,12,00,09,10,28,02,00,00,00,00,00,00,00,00,00,00,00),
+(00,00,00,00,00,00,03,01,01,01,01,06,28,14,13,00,14,07,07,16,15,07,07,13,00,14,13,28,05,01,01,01,01,04,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,28,28,28,28,28,28,09,10,28,28,28,28,28,28,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,11,08,08,12,28,11,08,08,08,12,28,09,10,28,11,08,08,08,12,28,11,08,08,12,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,14,07,16,10,28,14,07,07,07,13,28,14,13,28,14,07,07,07,13,28,09,15,07,13,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,29,28,28,09,10,28,28,28,28,28,28,28,00,00,28,28,28,28,28,28,28,09,10,28,28,29,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,24,08,12,28,09,10,28,11,12,28,11,08,08,08,08,08,08,12,28,11,12,28,09,10,28,11,08,25,00,00,00,00,00,00),
+(00,00,00,00,00,00,23,07,13,28,14,13,28,09,10,28,14,07,07,16,15,07,07,13,28,09,10,28,14,13,28,14,07,26,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,09,10,28,28,28,28,09,10,28,28,28,28,09,10,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,11,08,08,08,08,17,18,08,08,12,28,09,10,28,11,08,08,17,18,08,08,08,08,12,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,14,07,07,07,07,07,07,07,07,13,28,14,13,28,14,07,07,07,07,07,07,07,07,13,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,02,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,28,02,00,00,00,00,00,00),
+(00,00,00,00,00,00,05,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,06,00,00,00,00,00,00));
+
+-- Tabela za reset
+signal Osnova_reset: deklaracija:=(
 (00,00,00,00,00,00,03,01,01,01,01,01,01,01,01,01,01,01,01,21,22,01,01,01,01,01,01,01,01,01,01,01,01,04,00,00,00,00,00,00),
 (00,00,00,00,00,00,02,28,28,28,28,28,28,28,28,28,28,28,28,09,10,28,28,28,28,28,28,28,28,28,28,28,28,02,00,00,00,00,00,00),
 (00,00,30,30,30,00,02,28,11,08,08,12,28,11,08,08,08,12,28,09,10,28,11,08,08,08,12,28,11,08,08,12,28,02,00,27,27,27,00,00),
@@ -616,7 +648,6 @@ constant Stevilka_9: unsigned(0 to(20*20)-1) := (
  signal cntMan : unsigned(2 downto 0);
  signal x_pac_maze_cnt, y_pac_maze_cnt : unsigned(5 downto 0); -- lokacija v labirintu 
  signal x_pac_block_cnt, y_pac_block_cnt : unsigned(4 downto 0); -- counter za premik v drugo lokacijo
- signal x_pac_maze_locator, y_pac_maze_locator : unsigned(5 downto 0); -- za dolocanje lokacije v labirintu
 
  -- Labirint
  signal x_block_cnt : unsigned(4 downto 0);
@@ -649,10 +680,8 @@ constant Stevilka_9: unsigned(0 to(20*20)-1) := (
  signal Duhec4_data : std_logic;
  signal Duhec_bonus : std_logic; -- dobljen bonus je 1
  signal Duhec_bonus_cnt : unsigned(31 downto 0);
- signal Duhec1_smer: unsigned(1 downto 0); -- v katero smer se duhec premika (zaporedno smeri)
- signal Duhec2_smer: unsigned(1 downto 0);
- signal Duhec3_smer: unsigned(1 downto 0);
- signal Duhec4_smer: unsigned(1 downto 0);
+ signal Duhec1_smer, Duhec2_smer, Duhec3_smer, Duhec4_smer: unsigned(1 downto 0); -- v katero smer se duhec premika (zaporedno smeri)
+ signal Duhec1_smer_flip, Duhec2_smer_flip, Duhec3_smer_flip, Duhec4_smer_flip: std_logic; -- obrat smeri
  signal D1_x_maze, D1_y_maze : unsigned(5 downto 0); -- Lokacija duhca v labirintu za premikanje
  signal D2_x_maze, D2_y_maze : unsigned(5 downto 0); -- Lokacija duhca v labirintu za premikanje
  signal D3_x_maze, D3_y_maze : unsigned(5 downto 0); -- Lokacija duhca v labirintu za premikanje
@@ -661,9 +690,14 @@ constant Stevilka_9: unsigned(0 to(20*20)-1) := (
  signal D2_x_cnt, D2_y_cnt : unsigned(4 downto 0); -- vrednost v enem bloku
  signal D3_x_cnt, D3_y_cnt : unsigned(4 downto 0); -- vrednost v enem bloku
  signal D4_x_cnt, D4_y_cnt : unsigned(4 downto 0); -- vrednost v enem bloku
- signal Duhec_move_cnt : unsigned(4 downto 0); -- univerzalni cnt za pomikanje duhcev
- signal Duhci_izhod : std_logic;
- 
+ --signal Duhec_move_cnt : unsigned(4 downto 0); -- univerzalni cnt za pomikanje duhcev
+ signal Duhec1_move_cnt, Duhec2_move_cnt, Duhec3_move_cnt, Duhec4_move_cnt : unsigned(4 downto 0); 
+ signal Duhci_izhod : std_logic; -- zacetna sekvenca
+ signal D1_right, D1_up, D1_left, D1_dn : std_logic; -- smeri za zavijanje v labirintu
+ signal D2_right, D2_up, D2_left, D2_dn : std_logic;
+ signal D3_right, D3_up, D3_left, D3_dn : std_logic;
+ signal D4_right, D4_up, D4_left, D4_dn : std_logic; 
+ signal Duhec1_smer_stara, Duhec2_smer_stara, Duhec3_smer_stara, Duhec4_smer_stara: unsigned(1 downto 0); -- v katero smer se duhec premika (zaporedno smeri)
  
 begin
  
@@ -682,23 +716,22 @@ begin
  Duhec3_xt <= x - D3_x;
  Duhec3_yt <= y - D3_y;
  
- D4_x <= x_pac_maze_cnt * "010100" + "00000"; -- X koordinata duhca
- D4_y <= y_pac_maze_cnt * "010100" + "00000"; -- Y koordinata duhca
+ D4_x <= D4_x_maze * "010100" + D4_x_cnt; -- X koordinata duhca
+ D4_y <= D4_y_maze * "010100" + D4_y_cnt; -- Y koordinata duhca
  Duhec4_xt <= x - D4_x;
  Duhec4_yt <= y - D4_y;
 
  
  -- Opombe:
  -- Duhec1: rdec
- -- Duhec2: roza
- -- Duhec3: zelen
+ -- Duhec2: zelen
+ -- Duhec3: roza
  -- Duhec4: svetlo moder
  
  
   --// Premikanje pacmana //
- p_Pac_premikanje: process(clk, x, y, x1, y1, lives, x_pac_maze_locator, y_pac_maze_locator)--  
+ p_Pac_premikanje: process(x, y, x1, y1, lives, start)
  begin
- if rising_edge(clk) then
 	if lives /= "00" then
 		xt <= x-x1; -- premik pacmana po X - tipke
 		yt <= y-y1; -- premik pacmana po Y - tipke
@@ -706,53 +739,15 @@ begin
 		xt <= x-380; 
 		yt <= y-440; 
 	end if;
+
+	if start = '0' then
+		xt <= x-380; 
+		yt <= y-440; 
+	end if;
 	
-	
---	if start = '1' then
---		if (x_pac_maze_locator * "10100") < x1 and ((x_pac_maze_locator + 1) * "10100") > x1 then
---			x_pac_maze_cnt <= x_pac_maze_locator;
---			x_pac_block_cnt <= resize((x1 - x_pac_maze_cnt * "10100"),5);
---		else
---			x_pac_maze_locator <= x_pac_maze_locator + 1;
---		end if;
---	
---		if (y_pac_maze_locator * "10100") < y1 and ((y_pac_maze_locator + 1) * "10100") > y1 then
---			y_pac_maze_cnt <= y_pac_maze_locator;
---			y_pac_block_cnt <= resize((y1 - y_pac_maze_cnt * "10100"),5);
---		else
---			y_pac_maze_locator <= y_pac_maze_locator + 1;
---		end if;
---	else
---		x_pac_maze_cnt <= "010011";
---		y_pac_maze_cnt <= "010110";
---		x_pac_block_cnt <= "00000";
---		y_pac_block_cnt <= "00000";
---	end if;
-	
- end if;	
  end process p_Pac_premikanje;
  
- 
-  --// Premikanje Duhca - stevec //
- p_Premikanje_duhca: process(clk) 
- begin 
-	if rising_edge(clk) then 
---		if start = '1' then
---			if d=2000000 then 
---				d <= (others=>'0');
---				Duhec_move_cnt <= Duhec_move_cnt + 1;
---				if to_integer(Duhec_move_cnt) > 19 then
---					Duhec_move_cnt <= (others => '0');
---				end if;
---			else 
---				d <= d + 1; 
---			end if;
---		else
---			Duhec_move_cnt <= (others => '0');
---		end if; 
-	end if;
- end process p_Premikanje_duhca;
-  
+   
  
  --//// Data za tocke ////
  p_Tocke_data: process(y_block_cnt, x_block_cnt,y_maze_location, x_maze_location, enice, desetice, stotice, tocke_izpis) 
@@ -837,7 +832,7 @@ begin
 			when others => 
 				data <= '0';
 		end case;
-	elsif to_integer(smer) = 3 then -- smer: dol
+	else 									 -- smer: dol
 		case to_integer(cntMan) is
 			when 0 =>
 				data <= Pac1(to_integer(xt(4 downto 0) * "10100" + yt(4 downto 0)));
@@ -855,9 +850,9 @@ begin
 
 
 --//// Data za labirint ////
- p_Block_data: process(y_maze_location, x_maze_location, y_block_cnt, x_block_cnt, data_labirint, Osnova, tocke_data, ponastavi) 
+ p_Block_data: process(y_maze_location, x_maze_location, y_block_cnt, x_block_cnt, data_labirint, Osnova, tocke_data) 
  begin
- 
+	
 	data_labirint <= Osnova(to_integer(y_maze_location), to_integer(x_maze_location)); -- Lokacija labirinta
 
 	case data_labirint is
@@ -918,23 +913,15 @@ begin
 		when 27 => 
 			data_block <= Pac3(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Pacman zivljenja
 		when 28 =>
-			--if ponastavi /= '1' then
 				data_block <= Tocka(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Tocka -> 31
-			--end if;
 		when 29 =>
-			--if ponastavi /= '1' then
-				data_block <= Bonus(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Bonus -> 32
-			--end if;
+			data_block <= Bonus(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Bonus -> 32
 		when 30 =>
 			data_block <= tocke_data;-- Stevilo: tocke
 		when 31 =>
-			--if ponastavi = '1' then
 				data_block <= Blok_Blank(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Crno / prazno (tocke)
-			--end if;
 		when 32 =>
-			--if ponastavi = '1' then 
 				data_block <= Blok_Blank(to_integer(y_block_cnt(4 downto 0) * "10100" + x_block_cnt(4 downto 0))); -- Crno / prazno (bonus)
-			--end if;
 		when others => 
 			data_block <= '0';
 	end case;	
@@ -954,7 +941,7 @@ begin
  
  
  --//// Main Process ////
- process(clk)
+process(clk)
   begin
   if rising_edge(clk) then
   
@@ -969,8 +956,13 @@ begin
 	stopleft <= '0';
 	stopright <= '0';
   
+	-- *******************
 	-- ** Reset (tipka) **
+	-- *******************
 	if ponastavi = '1' then
+		--Osnova <= Osnova_reset;
+		Duhci_izhod <= '1';
+		debug <= '0';
 		lives <= "11";
 		smer <= "00";
 		start <= '0';
@@ -979,14 +971,28 @@ begin
 		Duhec2_alive <= '1';
 		Duhec3_alive <= '1';
 		Duhec4_alive <= '1';
+		Duhec1_smer <= "00";
+		Duhec2_smer <= "00";
+		Duhec3_smer <= "00";
+		Duhec4_smer <= "00";
+		Duhec1_smer_stara <= "00";
+		Duhec2_smer_stara <= "00";
+		Duhec3_smer_stara <= "00";
+		Duhec4_smer_stara <= "00";
+		Duhec1_smer_flip <= '0';--
+		Duhec2_smer_flip <= '0';
+		Duhec3_smer_flip <= '0';
+		Duhec4_smer_flip <= '0';--
+		Duhec1_move_cnt <= (others => '0');	
+		Duhec2_move_cnt <= (others => '0');	
+		Duhec3_move_cnt <= (others => '0');	
+		Duhec4_move_cnt <= (others => '0');
 		
 		-- tocke
 		tocke <= (others => '0');
 		enice <= (others => '0');
 		desetice <= (others => '0');
 		stotice <= (others => '0');
-	
-		Duhci_izhod <= '1';
 		
 		-- lokacije		
 		D1_x_maze <= "010001";
@@ -1019,8 +1025,9 @@ begin
 	end if;
 	
 
-
+	-- ******************************
 	-- ** Animacija pacmana (usta) **
+	-- ******************************
 	cntMounth <= cntMounth + 1;
 	if (cntMounth = 10000000) then
 		cntMounth <= (others=>'0');
@@ -1031,7 +1038,10 @@ begin
 			end if;	
 	end if;
 	
+	
+	-- ********************************************
 	-- ** Obracanje pacmana in sledenje za stene **
+	-- ********************************************
 	if x1 /= x1_old or y1 /= y1_old then
 		start <= '1';		
 		
@@ -1072,7 +1082,10 @@ begin
 		y1_old <= y1;
 	end if;
 	
-	-- ** Reset cnt-jev **	
+	
+	-- *******************
+	-- ** Reset cnt-jev **
+	-- *******************	
 	if y = 0 and x = 0 then
 		x_block_cnt <= (others => '0');
 		x_maze_location <= (others => '0');
@@ -1080,8 +1093,10 @@ begin
 		y_maze_location <= (others => '0');
 	end if;
 
-	
+
+	-- *****************************************************
 	-- ** Prikaz zivljenj na ekranu (spreminjanje tabele) **
+	-- *****************************************************
 	if lives = "11" then
 		Osnova(2,37) <= 27;
 		Osnova(2,36) <= 27;
@@ -1101,18 +1116,19 @@ begin
 	end if;
 	
 	
+	-- ******************************************
 	-- ** Bonus (da lahko poje duhca) in Tocke **
+	-- ******************************************
 	if data_labirint = 28 or data_labirint = 29 then
 		if (x1 >= (to_integer(x_maze_location) * 20) and x1 < ((to_integer(x_maze_location)*20) + 19)) or ((x1 + 19) >= (to_integer(x_maze_location) * 20) and ((x1 + 19) < (to_integer(x_maze_location) * 20) + 19)) then --20
 			if (y1 >= (to_integer(y_maze_location) * 20) and y1 < ((to_integer(y_maze_location)*20) + 19)) or ((y1 + 19) >= (to_integer(y_maze_location) * 20) and ((y1 + 19) < (to_integer(y_maze_location) * 20) + 19)) then	--20
 				if data_labirint = 28 then -- tocka
 					tocke <= tocke + 1 * combo;
-					Osnova(to_integer(y_maze_location),to_integer(x_maze_location)) <= 31; -- brisanje tocke iz labirinta
+					Osnova(to_integer(y_maze_location),to_integer(x_maze_location)) <= 00; -- brisanje tocke iz labirinta
 				elsif data_labirint = 29 then --bonus
-					--tocke <= tocke + 10;
-					desetice <= desetice + 1; -- resitev overflowa (dela ni pa najboljsi)
+					desetice <= desetice + 1; 
 					Duhec_bonus <= '1';
-					Osnova(to_integer(y_maze_location),to_integer(x_maze_location)) <= 32; -- brisanje bonusa iz labirinta
+					Osnova(to_integer(y_maze_location),to_integer(x_maze_location)) <= 00; -- brisanje bonusa iz labirinta
 				else
 					tocke <= tocke;
 				end if;
@@ -1128,7 +1144,9 @@ begin
 		end if;
 	end if;
 	
+	-- ****************************
 	-- ** Preracun tock za izpis **
+	-- ****************************
 	enice <= "00000000" + tocke(3 downto 0);
 	if to_integer(enice) = 10 then
 		enice <= (others => '0');
@@ -1141,12 +1159,18 @@ begin
 		stotice <= (others => '0');
 	end if;
 	
+	
+	-- *******************
 	-- ** Zalet v duhca **
+	-- *******************
 	if (x1 >= to_integer(D1_x) and x1 < (to_integer(D1_x) + 19)) or ((x1 + 19) >= to_integer(D1_x) and ((x1 + 19) < to_integer(D1_x) + 19)) then 
 		if (y1 >= to_integer(D1_y) and y1 < (to_integer(D1_y) + 19)) or ((y1 + 19) >= to_integer(D1_y) and ((y1 + 19) < to_integer(D1_y) + 19)) then	
 			if Duhec1_alive = '1' then
 				if Duhec_bonus = '1' then
 					Duhec1_alive <= '0';
+					D1_x_maze <= "101000";  
+					D1_y_maze <= "000000";
+					Duhec1_smer <= "11";
 					combo <= combo + 1; -- dodatne točke
 				else
 					trk <= '1';
@@ -1160,6 +1184,9 @@ begin
 			if Duhec2_alive = '1' then
 				if Duhec_bonus = '1' then
 					Duhec2_alive <= '0';
+					D2_x_maze <= "101000";  
+					D2_y_maze <= "000000";
+					Duhec2_smer <= "11";
 					combo <= combo + 1; -- dodatne točke
 				else
 					trk <= '1';
@@ -1173,6 +1200,9 @@ begin
 			if Duhec3_alive = '1' then
 				if Duhec_bonus = '1' then
 					Duhec3_alive <= '0';
+					D3_x_maze <= "101000";  
+					D3_y_maze <= "000000";
+					Duhec3_smer <= "11";
 					combo <= combo + 1; -- dodatne točke
 				else
 					trk <= '1';
@@ -1186,9 +1216,12 @@ begin
 			if Duhec4_alive = '1' then
 				if Duhec_bonus = '1' then
 					Duhec4_alive <= '0';
+					D4_x_maze <= "101000";  
+					D4_y_maze <= "000000";
+					Duhec4_smer <= "11";
 					combo <= combo + 1; -- dodatne točke
 				else
-					--trk <= '1';
+					trk <= '1';
 				end if;
 			end if;
 		end if;
@@ -1196,61 +1229,75 @@ begin
 	
 	if trk = '1' then
 		trk_init <= '1';
+	else
+		trk_init <= '0';
 	end if;
 	
 	if trk_init = '1' then -- Dogodek ob trku (v duhca)
 		trk_init <= '0';
+		Duhci_izhod <= '1';
 		combo <= "001";
 		smer <= "00";
 		start <= '0';
 		if desetice >= 1 then
 			desetice <= desetice - 1;
-			--tocke <= (others => '0');
 		else
 			enice <= (others => '0');
 		end if;
-
-		Duhci_izhod <= '1';
 		
 		lives <= lives - 1; --??????
 		
 		-- lokacije
 		Duhec1_alive <= '1';
+		Duhec1_smer <= "00";
 		D1_x_maze <= "010001";
 		D1_y_maze <= "001100";
 		D1_x_cnt <= (others => '0');
 		D1_y_cnt <= (others => '0');
 		
 		Duhec2_alive <= '1';
+		Duhec2_smer <= "00";
 		D2_x_maze <= "010001";
 		D2_y_maze <= "001110";
 		D2_x_cnt <= (others => '0');
 		D2_y_cnt <= (others => '0');
 		
 		Duhec3_alive <= '1';
+		Duhec3_smer <= "00";
 		D3_x_maze <= "010110";
 		D3_y_maze <= "001100";
 		D3_x_cnt <= (others => '0');
 		D3_y_cnt <= (others => '0');
 		
 		Duhec4_alive <= '1';
+		Duhec4_smer <= "00";
 		D4_x_maze <= "010110";
 		D4_y_maze <= "001110";
 		D4_x_cnt <= (others => '0');
 		D4_y_cnt <= (others => '0');
 		
+		Duhec1_smer_stara <= "00";
+		Duhec2_smer_stara <= "00";
+		Duhec3_smer_stara <= "00";
+		Duhec4_smer_stara <= "00";
+		
+		Duhec1_move_cnt <= (others => '0');	
+		Duhec2_move_cnt <= (others => '0');	
+		Duhec3_move_cnt <= (others => '0');	
+		Duhec4_move_cnt <= (others => '0');
+		
 		-- sledenje lokaciji Pacmana po labirintu-osnova
 		x_pac_maze_cnt <= "010011";
 		y_pac_maze_cnt <= "010110";
-		x_pac_block_cnt <= "00001";
-		y_pac_block_cnt <= "00001";
-		
-		
-		
+		x_pac_block_cnt <= "00000";
+		y_pac_block_cnt <= "00000";
+			
 	end if;
 	
-	-- ** Zidovi (stop) ** !!!
-	if (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 29) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 32) then 
+	-- *******************
+	-- ** Zidovi (stop) **
+	-- *******************
+	if (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 29) then -- and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt + 1)) /= 32) 
 		Pac_stop_right <= '1';
 		if (x_pac_block_cnt = "00000") then
 			stopright <= '1';
@@ -1258,7 +1305,7 @@ begin
 	else
 		Pac_stop_right <= '0';
 	end if;
-	if (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 29) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 32) then
+	if (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 29) then -- and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt),to_integer(x_pac_maze_cnt - 1)) /= 32)
 		Pac_stop_left <= '1';
 		if (x_pac_block_cnt = "00000") then
 			stopleft <= '1';
@@ -1266,7 +1313,7 @@ begin
 	else
 		Pac_stop_left <= '0';
 	end if;
-	if (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 29) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 32) then
+	if (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 29) then -- and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt - 1),to_integer(x_pac_maze_cnt)) /= 32) 
 		Pac_stop_up <= '1';
 		if (y_pac_block_cnt = "00000") then
 			stopup <= '1';
@@ -1274,7 +1321,7 @@ begin
 	else
 		Pac_stop_up <= '0';
 	end if;
-	if (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 29) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 32) then	
+	if (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 00) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 28) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 29) then -- and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 31) and (Osnova(to_integer(y_pac_maze_cnt + 1),to_integer(x_pac_maze_cnt)) /= 32) 	
 		Pac_stop_down <= '1';
 		if (y_pac_block_cnt = "00000") then
 			stopdn <= '1';
@@ -1282,6 +1329,8 @@ begin
 	else
 		Pac_stop_down <= '0';
 	end if;
+	
+	
 	
 	-- polovicne blokade smeri (ce pacman ni do konca v polju)
 	if Pac_stop_up = '0' then
@@ -1309,107 +1358,800 @@ begin
 	end if;	
 	
 	
-	-- ** Premikanje duhcev - samodejno **
-	
-	if start = '1' then
-		if d=2000000 then 
+	-- ***********************************
+	-- ** Premikanje duhcev - samodejno **	
+	-- ***********************************	
+
+	if start = '1' then -- zacetek premikanja duhcev
+		if d=2000000 or (Duhec1_smer_stara /= Duhec1_smer) or (Duhec2_smer_stara /= Duhec2_smer) or (Duhec3_smer_stara /= Duhec3_smer) or (Duhec4_smer_stara /= Duhec4_smer) then 
 			d <= (others=>'0');
-			if to_integer(Duhec_move_cnt) > 18 then
-				Duhec_move_cnt <= (others => '0');
+			
 				
-				-- Duhec 1
-				if Duhec1_smer = "00" then
-					D1_x_maze <= D1_x_maze + 1;
-				elsif Duhec1_smer = "01" then
-					D1_y_maze <= D1_y_maze - 1;
-				elsif Duhec1_smer = "10" then
-					D1_x_maze <= D1_x_maze - 1;
-				elsif Duhec1_smer = "11" then
-					D1_y_maze <= D1_y_maze + 1;
-				else
-					D1_x_maze <= D1_x_maze; 
-					D1_y_maze <= D1_y_maze; 
+			-- Duhec 1	
+			if to_integer(Duhec1_move_cnt) > 18 or (Duhec1_smer_stara /= Duhec1_smer) then -- reset stevca 	
+				Duhec1_move_cnt <= (others => '0');
+				
+				if Duhec1_smer_stara /= Duhec1_smer then
+					Duhec1_smer_flip <= not Duhec2_smer_flip; 
+					
+					if Duhec1_smer = "01" and Duhec1_smer_stara = "00" then
+						D1_y_maze <= D1_y_maze - 1;
+						D1_y_cnt	<= "10011";
+					elsif Duhec1_smer = "11" and Duhec1_smer_stara = "10" then
+						D1_y_cnt	<= (others => '0');
+					elsif Duhec1_smer = "00" and Duhec1_smer_stara = "11" then
+						D1_x_cnt	<= (others => '0');
+					elsif Duhec1_smer = "01" and Duhec1_smer_stara = "10" then
+						D1_y_maze <= D1_y_maze - 1;
+						D1_y_cnt	<= "10011";
+					elsif Duhec1_smer = "10" then
+						D1_x_maze <= D1_x_maze - 1;
+						D1_x_cnt	<= "10011";
+					elsif Duhec1_smer = "00" then
+						D1_x_cnt	<= (others => '0');
+					end if;
 				end if;
 				
-				-- Duhec 2
-				
-				-- Duhec 3
-				
-				-- Duhec 4
-				
+				if Duhec1_smer_stara = Duhec1_smer then
+					if Duhec1_smer = "00" then 		-- desno
+						D1_x_maze <= D1_x_maze + 1;
+						D1_x_cnt	<= (others => '0');
+					
+					elsif Duhec1_smer = "01" then		-- gor 
+						D1_y_maze <= D1_y_maze - 1;
+						D1_y_cnt	<= "10011";
+					
+					elsif Duhec1_smer = "10" then		-- levo
+						D1_x_maze <= D1_x_maze - 1;
+						D1_x_cnt	<= "10011";
+					
+					elsif Duhec1_smer = "11" then		-- dol
+						D1_y_maze <= D1_y_maze + 1;
+						D1_y_cnt	<= (others => '0');
+					
+					else
+						D1_x_maze <= D1_x_maze; 
+						D1_y_maze <= D1_y_maze; 
+					end if;
+				end if;
 				
 			else
-				Duhec_move_cnt <= Duhec_move_cnt + 1; -- premikanje duhca v bloku
+				
+				Duhec1_move_cnt <= Duhec1_move_cnt + 1;
+								
+				if Duhec1_smer = "00" then			-- desno
+					D1_x_cnt <= D1_x_cnt + 1;
+				elsif Duhec1_smer = "01" then		-- gor
+					D1_y_cnt <= D1_y_cnt - 1;
+				elsif Duhec1_smer = "10" then		-- levo
+					D1_x_cnt <= D1_x_cnt - 1;
+				else 										-- dol
+					D1_y_cnt <= D1_y_cnt + 1;
+				end if;
+			
 			end if;
+			
+			
+			-- Duhec 2
+			if to_integer(Duhec2_move_cnt) > 18 or (Duhec2_smer_stara /= Duhec2_smer) then -- reset stevca
+				Duhec2_move_cnt <= (others => '0');
+							
+				if Duhec2_smer_stara /= Duhec2_smer then
+					Duhec2_smer_flip <= not Duhec1_smer_flip;
+					
+					if Duhec2_smer = "01" and Duhec2_smer_stara = "00" then
+						D2_y_maze <= D2_y_maze - 1;
+						D2_y_cnt	<= "10011";
+					elsif Duhec2_smer = "11" and Duhec2_smer_stara = "10" then
+						D2_y_cnt	<= (others => '0');
+						D2_y_maze <= D2_y_maze;
+					elsif Duhec2_smer = "10" and Duhec2_smer_stara = "11" then
+						D2_x_cnt	<= "10011";
+						D2_x_maze <= D2_x_maze - 1;
+					elsif Duhec2_smer = "00" and Duhec2_smer_stara = "11" then
+						D2_x_cnt	<= (others => '0');
+					elsif Duhec2_smer = "01" and Duhec2_smer_stara = "10" then
+						D2_y_maze <= D2_y_maze - 1;
+						D2_y_cnt	<= "10011";
+					elsif Duhec2_smer = "10" then
+						D2_x_maze <= D2_x_maze - 1;
+						D2_x_cnt	<= "10011";
+					elsif Duhec2_smer = "00" then
+						D2_x_cnt	<= (others => '0');
+					end if;
+				end if;
+				
+				if Duhec2_smer_stara = Duhec2_smer then
+					if Duhec2_smer = "00" then 		-- desno
+						D2_x_maze <= D2_x_maze + 1;
+						D2_x_cnt	<= (others => '0');
+					
+					elsif Duhec2_smer = "01" then		-- gor 
+						D2_y_maze <= D2_y_maze - 1;
+						D2_y_cnt	<= "10011";
+					
+					elsif Duhec2_smer = "10" then		-- levo
+						D2_x_maze <= D2_x_maze - 1;
+						D2_x_cnt	<= "10011";
+					
+					elsif Duhec2_smer = "11" then		-- dol
+						D2_y_maze <= D2_y_maze + 1;
+						D2_y_cnt	<= (others => '0');
+					
+					else
+						D2_x_maze <= D2_x_maze; 
+						D2_y_maze <= D2_y_maze; 
+					end if;
+				end if;
+				
+			else
+			
+				Duhec2_move_cnt <= Duhec2_move_cnt + 1;
+
+				if Duhec2_smer = "00" then			-- desno
+					D2_x_cnt <= D2_x_cnt + 1;
+				elsif Duhec2_smer = "01" then		-- gor
+					D2_y_cnt <= D2_y_cnt - 1;
+				elsif Duhec2_smer = "10" then		-- levo
+					D2_x_cnt <= D2_x_cnt - 1;
+				else 										-- dol
+					D2_y_cnt <= D2_y_cnt + 1;
+				end if;
+				
+			end if;	
+			
+			-- Duhec 3
+			if to_integer(Duhec3_move_cnt) > 18 or (Duhec3_smer_stara /= Duhec3_smer) then -- reset stevca
+				Duhec3_move_cnt <= (others => '0');
+				
+				if Duhec3_smer_stara /= Duhec3_smer then
+					Duhec3_smer_flip <= not Duhec4_smer_flip;
+					
+					if Duhec3_smer = "01" and Duhec3_smer_stara = "00" then 
+						D3_y_maze <= D3_y_maze - 1;
+						D3_y_cnt	<= "10011";
+					elsif Duhec3_smer = "11" and Duhec3_smer_stara = "10" then
+						D3_y_cnt	<= (others => '0');
+					elsif Duhec3_smer = "00" and Duhec3_smer_stara = "11" then
+						D3_x_cnt	<= (others => '0');
+					elsif Duhec3_smer = "00" and Duhec3_smer_stara = "01" then
+						D3_x_cnt	<= (others => '0');
+						D3_x_maze <= D3_x_maze + 1;
+					elsif Duhec3_smer = "01" and Duhec3_smer_stara = "10" then
+						D3_y_maze <= D3_y_maze - 1;
+						D3_y_cnt	<= "10011";
+					elsif Duhec3_smer = "10" and Duhec3_smer_stara = "11" then
+						D3_x_maze <= D3_x_maze - 1;
+						D3_x_cnt	<= "10011";
+					elsif Duhec3_smer = "10" then
+						D3_x_maze <= D3_x_maze - 1;
+						D3_x_cnt	<= "10011";
+					end if;
+				end if;
+				
+				if Duhec3_smer_stara = Duhec3_smer then
+					if Duhec3_smer = "00" then 		-- desno
+						D3_x_maze <= D3_x_maze + 1;
+						D3_x_cnt	<= (others => '0');
+					
+					elsif Duhec3_smer = "01" then		-- gor 
+						D3_y_maze <= D3_y_maze - 1;
+						D3_y_cnt	<= "10011";
+					
+					elsif Duhec3_smer = "10" then		-- levo
+						D3_x_maze <= D3_x_maze - 1;
+						D3_x_cnt	<= "10011";
+					
+					elsif Duhec3_smer = "11" then		-- dol
+						D3_y_maze <= D3_y_maze + 1;
+						D3_y_cnt	<= (others => '0');
+					
+					else
+						D3_x_maze <= D3_x_maze; 
+						D3_y_maze <= D3_y_maze; 
+					end if;
+				end if;
+				
+			else
+			
+				Duhec3_move_cnt <= Duhec3_move_cnt + 1;
+
+				if Duhec3_smer = "00" then			-- desno
+					D3_x_cnt <= D3_x_cnt + 1;
+				elsif Duhec3_smer = "01" then		-- gor
+					D3_y_cnt <= D3_y_cnt - 1;
+				elsif Duhec3_smer = "10" then		-- levo
+					D3_x_cnt <= D3_x_cnt - 1;
+				else 										-- dol
+					D3_y_cnt <= D3_y_cnt + 1;
+				end if;
+			
+			end if;
+			
+			-- Duhec 4
+			if to_integer(Duhec4_move_cnt) > 18 or (Duhec4_smer_stara /= Duhec4_smer) then -- reset stevca
+				Duhec4_move_cnt <= (others => '0');
+				
+				if Duhec4_smer_stara /= Duhec4_smer then
+					Duhec4_smer_flip <= not Duhec3_smer_flip;
+					
+					if Duhec4_smer = "01" and Duhec4_smer_stara = "00" then 
+						D4_y_maze <= D4_y_maze - 1;
+						D4_y_cnt	<= "10011";
+					elsif Duhec4_smer = "11" and Duhec4_smer_stara = "10" then
+						D4_y_cnt	<= (others => '0');
+					elsif Duhec4_smer = "00" and Duhec4_smer_stara = "11" then
+						D4_x_cnt	<= (others => '0');
+					elsif Duhec4_smer = "01" and Duhec4_smer_stara = "10" then
+						D4_y_maze <= D4_y_maze - 1;
+						D4_y_cnt	<= "10011";
+					elsif Duhec4_smer = "00" and Duhec4_smer_stara = "01" then
+						D4_x_cnt	<= (others => '0');
+						D4_x_maze <= D4_x_maze + 1;
+					elsif Duhec4_smer = "10" and Duhec4_smer_stara = "01" then
+						D4_x_cnt	<= "10011";
+						D4_x_maze <= D4_x_maze - 1;
+					elsif Duhec4_smer = "10" then
+						D4_x_maze <= D4_x_maze - 1;
+						D4_x_cnt	<= "10011";
+					elsif Duhec4_smer = "00" then
+						D4_x_cnt	<= (others => '0');
+					end if;
+				end if;
+				
+				if Duhec4_smer_stara = Duhec4_smer then
+					if Duhec4_smer = "00" then 		-- desno
+						D4_x_maze <= D4_x_maze + 1;
+						D4_x_cnt	<= (others => '0');
+					
+					elsif Duhec4_smer = "01" then		-- gor 
+						D4_y_maze <= D4_y_maze - 1;
+						D4_y_cnt	<= "10011";
+					
+					elsif Duhec4_smer = "10" then		-- levo
+						D4_x_maze <= D4_x_maze - 1;
+						D4_x_cnt	<= "10011";
+					
+					elsif Duhec4_smer = "11" then		-- dol
+						D4_y_maze <= D4_y_maze + 1;
+						D4_y_cnt	<= (others => '0');
+					
+					else
+						D4_x_maze <= D4_x_maze; 
+						D4_y_maze <= D4_y_maze; 
+					end if;
+				end if;
+				
+			else
+			
+				Duhec4_move_cnt <= Duhec4_move_cnt + 1;
+				
+				if Duhec4_smer = "00" then			-- desno
+					D4_x_cnt <= D4_x_cnt + 1;
+				elsif Duhec4_smer = "01" then		-- gor
+					D4_y_cnt <= D4_y_cnt - 1;
+				elsif Duhec4_smer = "10" then		-- levo
+					D4_x_cnt <= D4_x_cnt - 1;					
+				else 										-- dol
+					D4_y_cnt <= D4_y_cnt + 1;
+				end if;
+			end if;	
+		
 		else 
 			d <= d + 1; 
 		end if;
 	else
-		Duhec_move_cnt <= (others => '0');
+		Duhec1_move_cnt <= (others => '0');	
+		Duhec2_move_cnt <= (others => '0');	
+		Duhec3_move_cnt <= (others => '0');	
+		Duhec4_move_cnt <= (others => '0');	
 	end if;
+	
+			
+	Duhec1_smer_stara <= Duhec1_smer;
+	Duhec2_smer_stara <= Duhec2_smer;
+	Duhec3_smer_stara <= Duhec3_smer;
+	Duhec4_smer_stara <= Duhec4_smer;
 	
 		-- Izhod iz startne cone
+	if Duhci_izhod = '1' and start = '1' then -- izhodna sekvenca
 	
-	if Duhci_izhod = '1' then -- izhodna sekvenca
-		if D1_x_maze /= "010010" and D1_y_maze /= "001010" then -- 
+		-- Duhec 1
+		if D1_x_maze = "010001" and D1_y_maze = "001100" then
 			Duhec1_smer <= "00";
-			D1_x_cnt <= Duhec_move_cnt;
 		end if;
 			
-		if D1_x_maze = "010011" and D1_y_maze /= "001010" then
+		if D1_x_maze = "010011" and D1_y_maze = "001100" then
 			Duhec1_smer <= "01";
-			D1_y_cnt <= 19 - Duhec_move_cnt;
 		end if;
 
-		if D1_x_maze = "010011" and D1_y_maze = "001010" then
+		if D1_x_maze = "010011" and D1_y_maze = "001010" and to_integer(D1_y_cnt) = 0 then
 			Duhec1_smer <= "10";
+			--Duhci_izhod <= '0';
+			D1_y_cnt	<= (others => '0');
+		end if;
+	
+		-- Duhec 2
+		if D2_x_maze = "010001" and D2_y_maze = "001110" then
+			Duhec2_smer <= "00";
+		end if;
+			
+		if D2_x_maze = "010011" and D2_y_maze = "001110" then
+			Duhec2_smer <= "01";
+		end if;
+
+		if D2_x_maze = "010011" and D2_y_maze = "001010" and to_integer(D2_y_cnt) = 0 then
+			Duhec2_smer <= "10";
 			Duhci_izhod <= '0';
+			D2_y_cnt	<= (others => '0');
 		end if;
 		
-	else							-- logika premikanja
-	
-		if Duhec1_smer = "00" then
-			D1_x_cnt <= Duhec_move_cnt;
+		-- Duhec 3
+		if D3_x_maze = "010110" and D3_y_maze = "001100" then
+			Duhec3_smer <= "10";
+		end if;
+			
+		if D3_x_maze = "010011" and D3_y_maze = "001100" then
+			Duhec3_smer <= "01";
+		end if;
+
+		if D3_x_maze = "010011" and D3_y_maze = "001010" and to_integer(D3_y_cnt) = 0 then
+			Duhec3_smer <= "00";
+			--Duhci_izhod <= '0';
+			D3_y_cnt	<= (others => '0');
 		end if;
 		
-		if Duhec1_smer = "01" then
-			D1_y_cnt <= 19 - Duhec_move_cnt;
+		-- Duhec 4		
+		if D4_x_maze = "010110" and D4_y_maze = "001110" then
+			Duhec4_smer <= "10";
 		end if;
-		
-		if Duhec1_smer = "10" then
-			D1_x_cnt <= 19 - Duhec_move_cnt;
+			
+		if D4_x_maze = "010011" and D4_y_maze = "001110" then
+			Duhec4_smer <= "01";
 		end if;
-		
-		if Duhec1_smer = "11" then
-			D1_y_cnt <= Duhec_move_cnt;
+
+		if D4_x_maze = "010011" and D4_y_maze = "001010" and to_integer(D4_y_cnt) = 0 then
+			Duhec4_smer <= "00";
+			Duhci_izhod <= '0';
+			D4_y_cnt	<= (others => '0');
 		end if;
+
 	end if;
 	
 	
-	if (Osnova(to_integer(D1_x_maze),to_integer(D1_x_maze + 1)) /= 00) and (Osnova(to_integer(D1_x_maze),to_integer(D1_x_maze + 1)) /= 28) and (Osnova(to_integer(D1_x_maze),to_integer(D1_x_maze + 1)) /= 29) and (Osnova(to_integer(D1_x_maze),to_integer(D1_x_maze + 1)) /= 31) and (Osnova(to_integer(D1_x_maze),to_integer(D1_x_maze + 1)) /= 32) then 
-		if (D1_x_maze = "00000") then
-			--stopright <= '1';
-		end if;
-	end if;
-	
-
-
-	
-
-
+		-- preverjanje poti
+	-- Duhec 1
+	case (Osnova(to_integer(D1_y_maze),to_integer(D1_x_maze + 1))) is -- Pregled okolice desno
+		when 00 =>
+			D1_right <= '0';
+		when 28 =>
+			D1_right <= '0';
+		when 29 =>
+			D1_right <= '0';	
+		when others => 
+			D1_right <= '1';
+	end case;	
 		
-
+	case (Osnova(to_integer(D1_y_maze),to_integer(D1_x_maze - 1))) is -- Pregled okolice levo
+		when 00 =>
+			D1_left <= '0';
+		when 28 =>
+			D1_left <= '0';
+		when 29 =>
+			D1_left <= '0';	
+		when others => 
+			D1_left <= '1';
+	end case;	
+	
+	case (Osnova(to_integer(D1_y_maze - 1),to_integer(D1_x_maze))) is -- Pregled okolice zgoraj
+		when 00 =>
+			D1_up <= '0';
+		when 28 =>
+			D1_up <= '0';
+		when 29 =>
+			D1_up <= '0';	
+		when others => 
+			D1_up <= '1';
+	end case;
+	
+	case (Osnova(to_integer(D1_y_maze + 1),to_integer(D1_x_maze))) is -- Pregled okolice spodaj
+		when 00 =>
+			D1_dn <= '0';
+		when 28 =>
+			D1_dn <= '0';
+		when 29 =>
+			D1_dn <= '0';	
+		when others => 
+			D1_dn <= '1';
+	end case;		
+	
+		-- Duhec 2
+	case (Osnova(to_integer(D2_y_maze),to_integer(D2_x_maze + 1))) is -- Pregled okolice desno
+		when 00 =>
+			D2_right <= '0';
+		when 28 =>
+			D2_right <= '0';
+		when 29 =>
+			D2_right <= '0';	
+		when others => 
+			D2_right <= '1';
+	end case;	
+		
+	case (Osnova(to_integer(D2_y_maze),to_integer(D2_x_maze - 1))) is -- Pregled okolice levo
+		when 00 =>
+			D2_left <= '0';
+		when 28 =>
+			D2_left <= '0';
+		when 29 =>
+			D2_left <= '0';	
+		when others => 
+			D2_left <= '1';
+	end case;	
+	
+	case (Osnova(to_integer(D2_y_maze - 1),to_integer(D2_x_maze))) is -- Pregled okolice zgoraj
+		when 00 =>
+			D2_up <= '0';
+		when 28 =>
+			D2_up <= '0';
+		when 29 =>
+			D2_up <= '0';	
+		when others => 
+			D2_up <= '1';
+	end case;
+	
+	case (Osnova(to_integer(D2_y_maze + 1),to_integer(D2_x_maze))) is -- Pregled okolice spodaj
+		when 00 =>
+			D2_dn <= '0';
+		when 28 =>
+			D2_dn <= '0';
+		when 29 =>
+			D2_dn <= '0';	
+		when others => 
+			D2_dn <= '1';
+	end case;
+	
+		-- Duhec 3
+	case (Osnova(to_integer(D3_y_maze),to_integer(D3_x_maze + 1))) is -- Pregled okolice desno
+		when 00 =>
+			D3_right <= '0';
+		when 28 =>
+			D3_right <= '0';
+		when 29 =>
+			D3_right <= '0';	
+		when others => 
+			D3_right <= '1';
+	end case;	
+		
+	case (Osnova(to_integer(D3_y_maze),to_integer(D3_x_maze - 1))) is -- Pregled okolice levo
+		when 00 =>
+			D3_left <= '0';
+		when 28 =>
+			D3_left <= '0';
+		when 29 =>
+			D3_left <= '0';	
+		when others => 
+			D3_left <= '1';
+	end case;	
+	
+	case (Osnova(to_integer(D3_y_maze - 1),to_integer(D3_x_maze))) is -- Pregled okolice zgoraj
+		when 00 =>
+			D3_up <= '0';
+		when 28 =>
+			D3_up <= '0';
+		when 29 =>
+			D3_up <= '0';	
+		when others => 
+			D3_up <= '1';
+	end case;
+	
+	case (Osnova(to_integer(D3_y_maze + 1),to_integer(D3_x_maze))) is -- Pregled okolice spodaj
+		when 00 =>
+			D3_dn <= '0';
+		when 28 =>
+			D3_dn <= '0';
+		when 29 =>
+			D3_dn <= '0';	
+		when others => 
+			D3_dn <= '1';
+	end case;
+	
+		-- Duhec 4
+	case (Osnova(to_integer(D4_y_maze),to_integer(D4_x_maze + 1))) is -- Pregled okolice desno
+		when 00 =>
+			D4_right <= '0';
+		when 28 =>
+			D4_right <= '0';
+		when 29 =>
+			D4_right <= '0';	
+		when others => 
+			D4_right <= '1';
+	end case;	
+		
+	case (Osnova(to_integer(D4_y_maze),to_integer(D4_x_maze - 1))) is -- Pregled okolice levo
+		when 00 =>
+			D4_left <= '0';
+		when 28 =>
+			D4_left <= '0';
+		when 29 =>
+			D4_left <= '0';	
+		when others => 
+			D4_left <= '1';
+	end case;	
+	
+	case (Osnova(to_integer(D4_y_maze - 1),to_integer(D4_x_maze))) is -- Pregled okolice zgoraj
+		when 00 =>
+			D4_up <= '0';
+		when 28 =>
+			D4_up <= '0';
+		when 29 =>
+			D4_up <= '0';	
+		when others => 
+			D4_up <= '1';
+	end case;
+	
+	case (Osnova(to_integer(D4_y_maze + 1),to_integer(D4_x_maze))) is -- Pregled okolice spodaj
+		when 00 =>
+			D4_dn <= '0';
+		when 28 =>
+			D4_dn <= '0';
+		when 29 =>
+			D4_dn <= '0';	
+		when others => 
+			D4_dn <= '1';
+	end case;
+	
+	
+	
+		-- logika
+	if Duhci_izhod = '0' then
+	
+		-- Duhec 1
+		if Duhec1_smer = "10" and to_integer(D1_x_cnt) = 0 and D1_left = '1' then
+			if D1_up = '1' and D1_dn = '0' then
+				Duhec1_smer <= "11";
+			elsif D1_dn = '1' and D1_up = '0' then
+				Duhec1_smer <= "01";
+			else
+				if Duhec1_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec1_smer <= "01";
+				else
+					Duhec1_smer <= "11";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec1_smer = "00" and to_integer(D1_x_cnt) = 0 and D1_right = '1' then
+			if D1_up = '1' and D1_dn = '0' then
+				Duhec1_smer <= "11";
+			elsif D1_dn = '1' and D1_up = '0' then
+				Duhec1_smer <= "01";
+			else 
+				if Duhec1_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec1_smer <= "01";
+				else
+					Duhec1_smer <= "11";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec1_smer = "01" and to_integer(D1_y_cnt) = 0 and D1_up = '1' then
+			if D1_left = '1' and D1_right = '0' then
+				Duhec1_smer <= "00";
+			elsif D1_right = '1' and D1_left = '0' then
+				Duhec1_smer <= "10";
+			else
+				if Duhec1_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec1_smer <= "00";
+				else
+					Duhec1_smer <= "10";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec1_smer = "11" and to_integer(D1_y_cnt) = 0 and D1_dn = '1' then --
+			if D1_left = '1' and D1_right = '0' then
+				Duhec1_smer <= "00";
+			elsif D1_right = '1' and D1_left = '0' then
+				Duhec1_smer <= "10";
+			else
+				if Duhec1_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec1_smer <= "00";
+				else
+					Duhec1_smer <= "10";
+				end if;
+			end if;
+		end if;
+		
+		-- Duhec 2
+		if Duhec2_smer = "10" and to_integer(D2_x_cnt) = 0 and D2_left = '1' then
+			Duhec2_smer_stara <= Duhec2_smer;
+			if D2_up = '1' and D2_dn = '0' then
+				Duhec2_smer <= "11";
+			elsif D2_dn = '1' and D2_up = '0' then
+				Duhec2_smer <= "01";
+			else
+				if Duhec2_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec2_smer <= "11";
+				else
+					Duhec2_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec2_smer = "00" and to_integer(D2_x_cnt) = 0 and D2_right = '1' then
+			Duhec2_smer_stara <= Duhec2_smer;
+			if D2_up = '1' and D2_dn = '0' then
+				Duhec2_smer <= "11";
+			elsif D2_dn = '1' and D2_up = '0' then
+				Duhec2_smer <= "01";
+			else 
+				if Duhec2_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec2_smer <= "11";
+				else
+					Duhec2_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec2_smer = "01" and to_integer(D2_y_cnt) = 0 and D2_up = '1' then
+			Duhec2_smer_stara <= Duhec2_smer;
+			if D2_left = '1' and D2_right = '0' then
+				Duhec2_smer <= "00";
+			elsif D2_right = '1' and D2_left = '0' then
+				Duhec2_smer <= "10";
+			else
+				if Duhec2_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec2_smer <= "00";
+				else
+					Duhec2_smer <= "10";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec2_smer = "11" and to_integer(D2_y_cnt) = 0 and D2_dn = '1' then --
+			Duhec2_smer_stara <= Duhec2_smer;
+			if D2_left = '1' and D2_right = '0' then
+				Duhec2_smer <= "00";
+			elsif D2_right = '1' and D2_left = '0' then
+				Duhec2_smer <= "10";
+			else
+				if Duhec2_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec2_smer <= "00";
+				else
+					Duhec2_smer <= "10";
+				end if;
+			end if;
+		end if;
+		
+		-- Duhec 3
+		if Duhec3_smer = "10" and to_integer(D3_x_cnt) = 0 and D3_left = '1' then
+			Duhec3_smer_stara <= Duhec3_smer;
+			if D3_up = '1' and D3_dn = '0' then
+				Duhec3_smer <= "11";
+			elsif D3_dn = '1' and D3_up = '0' then
+				Duhec3_smer <= "01";
+			else
+				if Duhec3_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec3_smer <= "11";
+				else
+					Duhec3_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec3_smer = "00" and to_integer(D3_x_cnt) = 0 and D3_right = '1' then
+			Duhec3_smer_stara <= Duhec3_smer;
+			if D3_up = '1' and D3_dn = '0' then
+				Duhec3_smer <= "11";
+			elsif D3_dn = '1' and D3_up = '0' then
+				Duhec3_smer <= "01";
+			else 
+				if Duhec3_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec3_smer <= "11";
+				else
+					Duhec3_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec3_smer = "01" and to_integer(D3_y_cnt) = 0 and D3_up = '1' then
+			Duhec3_smer_stara <= Duhec3_smer;
+			if D3_left = '1' and D3_right = '0' then
+				Duhec3_smer <= "00";
+			elsif D3_right = '1' and D3_left = '0' then
+				Duhec3_smer <= "10";
+			else
+				if Duhec3_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec3_smer <= "00";
+				else
+					Duhec3_smer <= "10";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec3_smer = "11" and to_integer(D3_y_cnt) = 0 and D3_dn = '1' then --
+			Duhec3_smer_stara <= Duhec3_smer;
+			if D3_left = '1' and D3_right = '0' then
+				Duhec3_smer <= "00";
+			elsif D3_right = '1' and D3_left = '0' then
+				Duhec3_smer <= "10";
+			else
+				if Duhec3_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec3_smer <= "00";
+				else
+					Duhec3_smer <= "10";
+				end if;
+			end if;
+		end if;
+		
+		-- Duhec 4
+		if Duhec4_smer = "10" and to_integer(D4_x_cnt) = 0 and D4_left = '1' then
+			Duhec4_smer_stara <= Duhec4_smer;
+			if D4_up = '1' and D4_dn = '0' then
+				Duhec4_smer <= "11";
+			elsif D4_dn = '1' and D4_up = '0' then
+				Duhec4_smer <= "01";
+			else
+				if Duhec4_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec4_smer <= "11";
+				else
+					Duhec4_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec4_smer = "00" and to_integer(D4_x_cnt) = 0 and D4_right = '1' then
+			Duhec4_smer_stara <= Duhec4_smer;
+			if D4_up = '1' and D4_dn = '0' then
+				Duhec4_smer <= "11";
+			elsif D4_dn = '1' and D4_up = '0' then
+				Duhec4_smer <= "01";
+			else 
+				if Duhec4_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec4_smer <= "11";
+				else
+					Duhec4_smer <= "01";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec4_smer = "01" and to_integer(D4_y_cnt) = 0 and D4_up = '1' then
+			Duhec4_smer_stara <= Duhec4_smer;
+			if D4_left = '1' and D4_right = '0' then
+				Duhec4_smer <= "00";
+			elsif D4_right = '1' and D4_left = '0' then
+				Duhec4_smer <= "10";
+			else
+				if Duhec4_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec4_smer <= "00";
+				else
+					Duhec4_smer <= "10";
+				end if;
+			end if;
+		end if;
+	
+		if Duhec4_smer = "11" and to_integer(D4_y_cnt) = 0 and D4_dn = '1' then --
+			Duhec4_smer_stara <= Duhec4_smer;
+			if D4_left = '1' and D4_right = '0' then
+				Duhec4_smer <= "00";
+			elsif D4_right = '1' and D4_left = '0' then
+				Duhec4_smer <= "10";
+			else
+				if Duhec4_smer_flip = '0' then -- izmenicno obracanje smeri
+					Duhec4_smer <= "00";
+				else
+					Duhec4_smer <= "10";
+				end if;
+			end if;
+		end if;
+		
+		
+	end if;	
 	
 
-	
-
-	
-	
-	
-	
-
-				
+	-- *********************	
 	-- ** Vidni del slike **
+	-- *********************
 	if x<800 and y<600 then  
 		
 		-- Risanje
@@ -1481,8 +2223,10 @@ begin
 			rgb <= "000000";
 		end if;
 			
-
+			
+		-- ********************************
 		-- ** Ozadje (labirint)	- logika **
+		-- ********************************
 		if x_block_cnt = 19 then -- reset x blok stevca
 			x_block_cnt <= (others=>'0');
 			if x_maze_location = 39 then -- konec vrstice (labirint)
@@ -1508,7 +2252,7 @@ begin
 			rgb <= "000000";
 		end if;
 	end if;
- end process; -- Main
+ end process;
  
 end RTL;
 

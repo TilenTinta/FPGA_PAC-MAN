@@ -1,5 +1,5 @@
 EDA Netlist Writer report for sistem
-Sun Jan 08 21:21:09 2023
+Tue Jan 17 20:45:52 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Jan 08 21:21:09 2023 ;
+; EDA Netlist Writer Status ; Successful - Tue Jan 17 20:45:52 2023 ;
 ; Revision Name             ; sistem                                ;
 ; Top-level Entity Name     ; sistem                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Jan 08 21:20:58 2023
+    Info: Processing started: Tue Jan 17 20:45:38 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off sistem -c sistem
 Info (204019): Generated file sistem_6_1200mv_85c_slow.vho in folder "C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file sistem_6_1200mv_0c_slow.vho in folder "C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file sistem_6_1200mv_0c_vhd_slow.sdo in folder "C:/User
 Info (204019): Generated file sistem_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file sistem_vhd.sdo in folder "C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Sun Jan 08 21:21:09 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Tue Jan 17 20:45:52 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 

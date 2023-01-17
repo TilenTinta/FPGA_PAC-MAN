@@ -1,0 +1,345 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/simulation/modelsim
+Ecpu
+Z1 w1638889378
+Z2 DPx4 work 7 procpak 0 22 ?_I<NPg6S47^gbkVkBEdh2
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z6 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd
+Z7 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd
+l0
+L6 1
+VboDa_DZR_m[SUWZ=B@YJR1
+!s100 _Q0VYN9d`BbQizB3KR;fE1
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1673811796
+!i10b 1
+Z10 !s108 1673811796.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd|
+Z12 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aopis
+R2
+R3
+R4
+R5
+Z15 DEx4 work 3 cpu 0 22 boDa_DZR_m[SUWZ=B@YJR1
+!i122 5
+l26
+L18 93
+Vl1M37W_f2jR8RSBS6JR9z0
+!s100 gCkf_0GNk_SAAcG0KZ9zS1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Egrafika
+Z16 w1673811576
+R3
+R4
+R5
+!i122 1
+R0
+Z17 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd
+Z18 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd
+l0
+L7 1
+Vf`h=KG<mU4iU[dm3G]9DU3
+!s100 jRQMmN5ig<<`5gVNK`POT3
+R8
+33
+Z19 !s110 1673811795
+!i10b 1
+Z20 !s108 1673811795.000000
+Z21 !s90 -reportprogress|300|-2008|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd|
+Z22 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd|
+!i113 1
+Z23 o-2008 -work work
+R14
+Artl
+R3
+R4
+R5
+Z24 DEx4 work 7 grafika 0 22 f`h=KG<mU4iU[dm3G]9DU3
+!i122 1
+l673
+L23 1541
+V<^G1D;>SQk4HKCD6DzU4E3
+!s100 2<QYRGXb@5F6W::VEdiAd2
+R8
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R14
+Eio
+Z25 w1639384300
+R3
+R4
+R5
+!i122 2
+R0
+Z26 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd
+Z27 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd
+l0
+L5 1
+Vk5FADBDOd>>Mon9]k=omC1
+!s100 KI5bRjQ=nGJa6AKHb_jZY2
+R8
+33
+R19
+!i10b 1
+R20
+Z28 !s90 -reportprogress|300|-2008|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd|
+Z29 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd|
+!i113 1
+R23
+R14
+Artl
+R3
+R4
+R5
+Z30 DEx4 work 2 io 0 22 k5FADBDOd>>Mon9]k=omC1
+!i122 2
+l34
+L27 69
+V5:UDHkS8l]Q53jcRCNHl<1
+!s100 KZbNiKZYgIe`a`:mB=?fC1
+R8
+33
+R19
+!i10b 1
+R20
+R28
+R29
+!i113 1
+R23
+R14
+Eproc
+Z31 w1639384197
+R3
+R4
+R5
+!i122 6
+R0
+Z32 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd
+Z33 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd
+l0
+L5 1
+VoWUW>4Q=7>7BeBLd8TnZo2
+!s100 @Fh3UJ6O8Bk^[P48XDSSb0
+R8
+31
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd|
+Z35 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd|
+!i113 1
+R13
+R14
+Aopis
+R2
+R15
+Z36 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z37 DEx4 work 7 program 0 22 S=8z0jB[BcFN;LS<;86i71
+R3
+R4
+R5
+Z38 DEx4 work 4 proc 0 22 oWUW>4Q=7>7BeBLd8TnZo2
+!i122 6
+l22
+L15 40
+VLT@;:d>KT^P7X[Zm85NVC1
+!s100 Q<C2DbH414b70DK[WC1lQ2
+R8
+31
+R9
+!i10b 1
+R10
+R34
+R35
+!i113 1
+R13
+R14
+Pprocpak
+R3
+R4
+R5
+!i122 0
+w1544476834
+R0
+8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd
+FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd
+l0
+L5 1
+V?_I<NPg6S47^gbkVkBEdh2
+!s100 AUXe;2Bh6_R:Vn=alGVK13
+R8
+31
+R19
+!i10b 1
+R20
+!s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd|
+!s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd|
+!i113 1
+R13
+R14
+Eprogram
+Z39 w1638956486
+R36
+R4
+R5
+!i122 4
+R0
+Z40 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd
+Z41 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd
+l0
+L43 1
+VS=8z0jB[BcFN;LS<;86i71
+!s100 3?8^YVY>1EZgSk;F2H[D?3
+R8
+31
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd|
+Z43 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd|
+!i113 1
+R13
+R14
+Asyn
+R36
+R4
+R5
+R37
+!i122 4
+l60
+L56 37
+VSjVQIzgeZPYk2lFS31>AX3
+!s100 kNml3LgV=:S>@WQmlJaB:1
+R8
+31
+R9
+!i10b 1
+R10
+R42
+R43
+!i113 1
+R13
+R14
+Esistem
+Z44 w1639387112
+R3
+R4
+R5
+!i122 7
+R0
+Z45 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd
+Z46 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd
+l0
+L15 1
+V6Pk`Y`O2E8iz[cHg_R?m;1
+!s100 OcTniliD[ZcHWAc]F2fNI0
+R8
+31
+R9
+!i10b 1
+R10
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd|
+!s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd|
+!i113 1
+R13
+R14
+Aopis
+R30
+R24
+R38
+Z48 DEx4 work 10 vgavmesnik 0 22 k@cFD4i0FcKjhjIVXzala1
+R3
+R4
+R5
+DEx4 work 6 sistem 0 22 6Pk`Y`O2E8iz[cHg_R?m;1
+!i122 7
+l53
+L25 107
+VCX26jIMZikOWTANoaR4G_1
+!s100 1H^dHdBPEb<5[kZBI6kCY3
+R8
+31
+R9
+!i10b 1
+R10
+R47
+Z49 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd|
+!i113 1
+R13
+R14
+Evgavmesnik
+Z50 w1638885817
+R3
+R4
+R5
+!i122 3
+R0
+Z51 8C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd
+Z52 FC:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd
+l0
+L6 1
+Vk@cFD4i0FcKjhjIVXzala1
+!s100 dK_GEX5bAVid`PEjHKH<g2
+R8
+31
+R9
+!i10b 1
+R10
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd|
+Z54 !s107 C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd|
+!i113 1
+R13
+R14
+Aopis
+R3
+R4
+R5
+R48
+!i122 3
+l38
+L19 106
+Vz^6d=5g^Zi17I_UL8IZ5^1
+!s100 Ug?_oHmYn@[UbK`_f_Oh`1
+R8
+31
+R9
+!i10b 1
+R10
+R53
+R54
+!i113 1
+R13
+R14

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/titit/Desktop/Projekt/B21sistem_restored/") File("sistem.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/") File("sistem.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
