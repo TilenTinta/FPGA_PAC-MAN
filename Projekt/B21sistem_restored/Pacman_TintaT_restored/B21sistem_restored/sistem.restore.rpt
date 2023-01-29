@@ -1,0 +1,90 @@
+Restore Archived Project report for sistem
+Tue Jan 17 21:21:28 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Jan 17 21:21:28 2023 ;
+; Revision Name                   ; sistem                                ;
+; Top-level Entity Name           ; sistem                                ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT.qar' into the 'C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT_restored/' directory
+Info: Generated report 'sistem.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Tue Jan 17 21:21:28 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++---------------------------------------------------+
+; Files Restored                                    ;
++---------------------------------------------------+
+; File Name                                         ;
++---------------------------------------------------+
+; qar_info.json                                     ;
+; B21sistem_restored/VGAvmesnik.vhd                 ;
+; B21sistem_restored/cpu.vhd                        ;
+; B21sistem_restored/de0.sdc                        ;
+; B21sistem_restored/grafika.vhd                    ;
+; B21sistem_restored/io.vhd                         ;
+; B21sistem_restored/proc.vhd                       ;
+; B21sistem_restored/procpak.vhd                    ;
+; B21sistem_restored/program.cmp                    ;
+; B21sistem_restored/program.qip                    ;
+; B21sistem_restored/program.vhd                    ;
+; B21sistem_restored/sistem.qpf                     ;
+; B21sistem_restored/sistem.qsf                     ;
+; B21sistem_restored/sistem.vhd                     ;
+; B21sistem_restored/sistem_assignment_defaults.qdf ;
+; koda.mif                                          ;
++---------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

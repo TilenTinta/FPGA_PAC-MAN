@@ -1,0 +1,32 @@
+Quartus Prime Archive log --	C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT.qarlog
+
+Archive:	C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT.qar
+Date:		Tue Jan 17 21:18:01 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/VGAvmesnik.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/cpu.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/de0.sdc
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/grafika.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/io.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/proc.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/procpak.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.cmp
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.qip
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/program.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.qpf
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.qsf
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem.vhd
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/sistem_assignment_defaults.qdf
+C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/koda.mif
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Jan 17 21:21:28 2023
+Source archive file:	C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT.qar
+Archive was extracted into	C:/Users/titit/Desktop/FPGA_PAC-MAN/Projekt/B21sistem_restored/Pacman_TintaT_restored/
+		 - successfully.
